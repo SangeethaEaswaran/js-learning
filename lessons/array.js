@@ -64,3 +64,50 @@ console.log(Array.isArray("fruits1"))
 
 let text1 = furitJoin.join(" and ")
 console.log('text1=>', text1)
+
+const list = furitJoin.keys()
+console.log('list', list)
+let text3 ='';
+for ( let x of list){
+    text3+=x;
+}
+console.log('text3==>', text3)
+console.log('lastIndexOf==>', furitJoin.lastIndexOf("mangoes2"))
+console.log('length==>', furitJoin.length)
+
+
+const num = [4,9,16,25]
+console.log(num.map(Math.sqrt))
+console.log(num.map((e)=>e*10))
+
+const n = Array.of("abc","bcd","efg")
+console.log('n=>', n)
+n.pop()
+console.log('n=>', n)
+n.push('ijk','lmn')
+console.log('n=>', n)
+console.log('n=>', n.reverse())
+console.log('n=>', n.shift())
+
+const sliceFruits = furitJoin.slice(1,3)
+console.log('sliceFruits=>', sliceFruits)
+
+const sliceFruits1 = furitJoin.slice(-3,-1)
+console.log('sliceFruits=1>', sliceFruits1)
+
+// const toBesliced = furitJoin.toSpliced(2,0 , "Lemon", "Kiwi")
+// console.log('toBesliced>', toBesliced)
+
+console.log('toString>', furitJoin.toString())
+
+console.log(furitJoin.some((f)=> f =="peaches1"))
+console.log(furitJoin.sort())
+
+console.log(furitJoin.splice(2,0,"melon","nectar"))
+// const arrReversed = furitJoin.toReversed()
+// console.log('arrReversed=>', arrReversed)
+
+furitJoin.unshift("Apple", "Pineapple")
+console.log('furitJoin=>', furitJoin.valueOf())
+// const i =furitJoin.with(2,"lime")
+// console.log(i)
